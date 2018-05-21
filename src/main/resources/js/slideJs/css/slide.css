@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 0;
+}
+a {
+	text-decoration: none;
+}
+/*焦点图*/
+.focus_body {
+	font-family:"microsoft yahei";
+	position: relative;
+	width: 1000px;
+	height: 594px;
+	background: #FFF;
+	border-bottom: 1px solid #e1e1e1;
+	margin: 50px auto
+}
+.scroll {
+	width: 686px;
+	margin: 0 auto;
+	position: relative;
+	height: 508px;
+	overflow: hidden;
+	text-align:center;
+}
+.arr_left {
+	display:none;
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	overflow: hidden;
+	left: 0;
+	top: 220px;
+	z-index: 3;
+	line-height: 400px;
+	background: url(../images/arrow-left.png) no-repeat;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../images/arrow-left.png');
+	_background: none;
+}
+.arr_right {
+	display:none;
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	overflow: hidden;
+	right: 0;
+	top: 220px;
+	z-index: 3;
+	line-height: 400px;
+	background: url(../images/arrow-right.png) no-repeat;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../images/arrow-right.png');
+	_background: none;
+}
+.scroll .box {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.scroll .box img {
+	max-height: 508px;
+	max-width: 686px;
+}
+.scroll .box a:hover {
+	text-decoration: none;
+}
+.scroll .box .scroll_detail {
+	display:none;
+}
+.scroll .box .bg, .scroll .box .sum {
+	display: block;
+	height: 58px;
+	position: absolute;
+	bottom: 58px;
+	left: 0;
+	line-height: 26px;
+}
+.scroll .box .bg {
+	background-color: #FFF;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	width: 1000px;
+}
+.scroll .box .sum {
+	font-size: 14px;
+	padding-left: 14px;
+	color: #333;
+	width: 925px;
+}
+.scroll .box .btn {
+	display: block;
+	width: 45px;
+	height: 22px;
+	position: absolute;
+	right: 0;
+	bottom:58px;
+	cursor: pointer;
+	background: url(../images/arrow-top.png) no-repeat;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../images/arrow-top.png');
+	_background: none;
+}
+.scroll .box .btn:hover {
+	background: url(../images/arrow-top-active.png) no-repeat;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../images/arrow-top-active.png');
+	_background: none;
+}
+.scroll .box .btn.fold {
+	width: 45px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+	background: url(../images/arrow-bottom.png) no-repeat;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../images/arrow-bottom.png');
+	_background: none;
+}
+.scroll .box .btn.fold:hover {
+	background: url(../images/arrow-bottom-hover.png) no-repeat;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='../images/arrow-bottom-hover.png');
+	_background: none;
+}
+.scroll .box .title {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 58px;
+	line-height: 58px;
+	font-size: 22px;
+	color: #000;
+	width: 800px;
+	padding-left: 14px;
+}
+.scroll_cont {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.numList {
+	position: absolute;
+	right: 405px;
+	bottom: 4px;
+	height: 35px;
+}
+.numList span {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
+	cursor: pointer;
+	background: url(../images/btn-normal.gif) no-repeat;
+	margin-top: 14px;
+}
+.numList span.selected {
+	background: url(../images/btn-active.gif) no-repeat;
+}
+.bd_bg {
+	position: absolute;
+	top: 500px;
+	left: 0;
+	height: 58px;
+	width: 998px;
+	border-right: 1px solid #e1e1e1;
+	border-left: 1px solid #e1e1e1;
+	border-bottom: 1px solid #f8f8f8;
+	background: #fff;
+}
+.bd_bg2 {
+	position: absolute;
+	top: 559px;
+	left: 0;
+	height: 35px;
+	width: 998px;
+	border-right: 1px solid #e1e1e1;
+	border-left: 1px solid #e1e1e1;
+	background: #fcfcfc;
+}
